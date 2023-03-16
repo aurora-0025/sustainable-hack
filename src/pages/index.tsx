@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import FAQ from "@/components/FAQ";
+import Buttons from "@/components/Buttons";
 
 export default function Home() {
     return (
@@ -15,8 +16,8 @@ export default function Home() {
                 est incidunt architecto id enim unde blanditiis
             </h4>
 
-            <button className=" w-70 h-12 flex gap-2 items-center bg-blue-500 hover:bg-blue-400 text-white font-bold px-3 border-b-4 border-r-4 border-black rounded-lg shadow-lg hover:shadow-sm ">
-                    Get Started   
+            <button className=" w-70 h-12 flex gap-2 items-center bg-blue-500 text-white font-bold px-3 hover:translate-y-1 hover:translate-x-1 drop-shadow-[5px_5px_0px_rgb(0,0,0)] hover:drop-shadow-[0px_0px_0px_rgb(0,0,0)] rounded-lg shadow-lg  ">
+                    Get Started  
                     <svg 
                         className="w-8 h-8 transition-all delay-75 hover:rotate-[-45deg] "
                         clip-rule="evenodd"
@@ -32,6 +33,18 @@ export default function Home() {
                         />
                     </svg> 
             </button>
+
+            <div className="max-w-md  bg-green-700 p-3 mt-5 border-[1px] border-black rounded-lg shadow-lg hover:shadow-sm ">
+                <h2 className="text-3xl font-bold">3D</h2>
+                <p className="text-black-600 font-semibold text-xl">Perfect your craft with the ame tools useed blah blah blah</p>
+                <p className="text-black-600 mt-2 font-semibold">
+                    Popular tags
+                </p>
+                <Buttons text="dff"/>
+                <Buttons text="fsdf" />
+                <Buttons text="dfsd"/>
+            </div>
+            
 
             <div className="max-w-md p-3 mt-5 border-2 border-b-[5px] border-r-[5px] border-black rounded-lg shadow-lg hover:shadow-sm ">
                 <h2 className="text-3xl font-bold">Hello World</h2>
