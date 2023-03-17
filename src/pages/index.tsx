@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import FAQ from "@/components/FAQ";
 import Buttons from "@/components/Buttons";
-import BarChart from "@/components/Charts";
 
 export default function Home() {
   return (
