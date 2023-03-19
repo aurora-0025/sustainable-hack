@@ -3,6 +3,23 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import FAQ from "@/components/FAQ";
 import Buttons from "@/components/Buttons";
+import React from "react";
+import { Doughnut } from "react-chartjs-2";
+import { Chart, ArcElement } from "chart.js";
+Chart.register(ArcElement);
+
+const data = {
+  labels: ["Red", "Green", "Blue"],
+  datasets: [
+    {
+      data: [300, 50, 100],
+      backgroundColor: ["#4188ff", "#649eff", "#78aaff"],
+      hoverBackgroundColor: ["#FF6384", "#FF6384", "#FF6384"],
+    },
+  ],
+};
+
+
 
 export default function Home() {
   return (
@@ -166,6 +183,34 @@ export default function Home() {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-6 ">
+        <div className="max-w-md rounded-lg border bg-white p-4 shadow-md dark:border-gray-700 dark:bg-gray-800 sm:p-8">
+        <h3 className="text-2xl font-semibold leading-none text-gray-900 dark:text-white">
+              Invesments&apos;s List
+            </h3>
+          <div className="mt-10 mb-4 flex items-center justify-center">
+            <div className=" h-30 w-30">
+            <Doughnut data={data} />
+            </div>
+            
+          </div>
+          <div className="max-w-md  mt-5 grid grid-flow-row-dense grid-cols-2 gap-6 justify-around">
+
+            <h3 className="text-xl font  text-gray-900 dark:text-white">
+              Personalised
+            </h3>
+            <h3 className="text-xl font  text-gray-900 dark:text-white">
+              Database
+            </h3>
+            <h3 className="text-xl font text-gray-900 dark:text-white">
+              Copies</h3>
+            <h3 className="text-xl font  text-gray-900 dark:text-white">
+              Blah
+            </h3>
+            </div>
         </div>
       </div>
     </div>
