@@ -8,17 +8,6 @@ import { Doughnut } from "react-chartjs-2";
 import { Chart, ArcElement } from "chart.js";
 Chart.register(ArcElement);
 
-const data = {
-  labels: ["Red", "Green", "Blue"],
-  datasets: [
-    {
-      data: [300, 50, 100],
-      backgroundColor: ["#4188ff", "#649eff", "#78aaff"],
-      hoverBackgroundColor: ["#FF6384", "#FF6384", "#FF6384"],
-    },
-  ],
-};
-
 
 
 export default function Home() {
@@ -97,122 +86,8 @@ export default function Home() {
         <FAQ />
       </div>
 
-      <div className="mx-auto mt-6 max-w-2xl">
-        <div className="max-w-md rounded-lg border bg-white p-4 shadow-md dark:border-gray-700 dark:bg-gray-800 sm:p-8">
-          <div className="mb-4 flex items-center justify-between">
-            <h3 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
-              Member&apos;s List
-            </h3>
-            <a
-              href="#"
-              className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
-            >
-              Top Story
-            </a>
-          </div>
-          <div className="flow-root">
-            <ul
-              role="list"
-              className="divide-y divide-gray-200 dark:divide-gray-700"
-            >
-              <li className="mt-1 py-3 sm:py-4">
-                <div className="flex items-center space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-8 w-8 rounded-full"
-                      src="https://wallpapercave.com/wp/wp11696053.jpg"
-                      alt="Neil image"
-                    />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
-                      Bocchi the Rohn
-                    </p>
-                    <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                      deez@nuts.com
-                    </p>
-                  </div>
-                  <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                    Active
-                  </div>
-                </div>
-              </li>
-              <li className="mt-1 py-3 sm:py-4">
-                <div className="flex items-center space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-8 w-8 rounded-full"
-                      src="https://wallpapercave.com/wp/wp11696053.jpg"
-                      alt="Neil image"
-                    />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
-                      Bocchi the Rohn
-                    </p>
-                    <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                      deez@nuts.com
-                    </p>
-                  </div>
-                  <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                    Active
-                  </div>
-                </div>
-              </li>
-              <li className="mt-1 py-3 sm:py-4">
-                <div className="flex items-center space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-8 w-8 rounded-full"
-                      src="https://wallpapercave.com/wp/wp11696053.jpg"
-                      alt="Neil image"
-                    />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
-                      Bocchi the Rohn
-                    </p>
-                    <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                      deez@nuts.com
-                    </p>
-                  </div>
-                  <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                    Active
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mt-6 ">
-        <div className="max-w-md rounded-lg border bg-white p-4 shadow-md dark:border-gray-700 dark:bg-gray-800 sm:p-8">
-        <h3 className="text-2xl font-semibold leading-none text-gray-900 dark:text-white">
-              Invesments&apos;s List
-            </h3>
-          <div className="mt-10 mb-4 flex items-center justify-center">
-            <div className=" h-30 w-30">
-            <Doughnut data={data} />
-            </div>
-            
-          </div>
-          <div className="max-w-md  mt-5 grid grid-flow-row-dense grid-cols-2 gap-6 justify-around">
-
-            <h3 className="text-xl font  text-gray-900 dark:text-white">
-              Personalised
-            </h3>
-            <h3 className="text-xl font  text-gray-900 dark:text-white">
-              Database
-            </h3>
-            <h3 className="text-xl font text-gray-900 dark:text-white">
-              Copies</h3>
-            <h3 className="text-xl font  text-gray-900 dark:text-white">
-              Blah
-            </h3>
-            </div>
-        </div>
-      </div>
+     
+    
     </div>
   );
 }
