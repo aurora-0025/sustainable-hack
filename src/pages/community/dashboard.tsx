@@ -11,9 +11,11 @@ const data = {
     labels: ["Red", "Green", "Blue"],
     datasets: [
         {
-            data: [300, 50, 100],
-            backgroundColor: ["#4188ff", "#649eff", "#78aaff"],
-            hoverBackgroundColor: ["#FF6384", "#FF6384", "#FF6384"],
+            data: [100, 250, 100],
+            backgroundColor: ["#1F2937","#4188ff", "#649eff" ],
+            hoverBackgroundColor: ["#1E293B","#FF6384", "#FF6384"],
+            borderWidth: [0, 0, 0],
+            borderRadius:[10,0,0]
         },
     ],
 };
@@ -22,18 +24,20 @@ const data2 = {
     labels: ["Red", "Green", "Blue"],
     datasets: [
         {
-            data: [300, 50],
-            backgroundColor: ["#4188ff", "#649eff"],
-            hoverBackgroundColor: ["#FF6384", "#FF6384"],
+            data: [40, 300],
+            backgroundColor: ["#1F2937","#4188ff" ],
+            hoverBackgroundColor: ["#1E293B","#FF6384"],
+            borderWidth: [0, 0],
+            borderRadius:[10,10]
         },
     ],
 };
 
 function dashboard() {
     return (
-        <div className="p-5 md:p-10 flex justify-center">
-            <div className="max-w-[1260px] mt-6 flex flex-col ">
-            <div className="mt-6 flex  flex-col gap-10 p-5 md:flex-row justify-evenly">
+        <div className="p-5 md:p-10 flex justify-center bg-gray-900 ">
+            <div className="max-w-[1240px] mt-6 flex flex-col ">
+            <div className="flex  flex-col gap-10 p-5 md:flex-row justify-evenly">
                 <div className="flex flex-col divide-y-[0.5px] divide-gray-700 rounded-lg border bg-white p-4 shadow-md dark:border-gray-700 dark:bg-gray-800 sm:p-8">
                     <div className="mt-5 flex-col">
                         <div className="text-sm font-bold text-blue-700">
@@ -52,7 +56,7 @@ function dashboard() {
                         <div className="mt-5 flex-shrink-0">
                             <img
                                 className="h-80 w-80 "
-                                src="https://png.pngtree.com/png-clipart/20191206/ourmid/pngtree-green-dollar-sign-money-tree-png-image_2070575.jpg"
+                                src="https://i.pinimg.com/736x/80/0b/78/800b78cf961d8624e3f25c98f65bf620.jpg"
                                 alt="Neil image"
                             />
                         </div>
@@ -92,12 +96,7 @@ function dashboard() {
                         <h3 className="font text-xl  text-gray-900 dark:text-white">
                             Database
                         </h3>
-                        <h3 className="font text-xl text-gray-900 dark:text-white">
-                            Copies
-                        </h3>
-                        <h3 className="font text-xl  text-gray-900 dark:text-white">
-                            Blah
-                        </h3>
+                       
                     </div>
                 </div>
             </div>
@@ -149,6 +148,28 @@ function dashboard() {
                             <li className="mt-1 py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="">
+                                        <img
+                                            className="h-8 w-8 rounded-full"
+                                            src="https://wallpapercave.com/wp/wp11696053.jpg"
+                                            alt="Neil image"
+                                        />
+                                    </div>
+                                    <div className="min-w-0 flex-1">
+                                        <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
+                                            Bocchi the Rohn
+                                        </p>
+                                        <p className="truncate text-sm text-gray-500 dark:text-gray-400">
+                                            deez@nuts.com
+                                        </p>
+                                    </div>
+                                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                        Active
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="mt-1 py-3 sm:py-4">
+                                <div className="flex items-center space-x-4">
+                                    <div className="flex-shrink-0">
                                         <img
                                             className="h-8 w-8 rounded-full"
                                             src="https://wallpapercave.com/wp/wp11696053.jpg"
