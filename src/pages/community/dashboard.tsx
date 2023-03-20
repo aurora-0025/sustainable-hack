@@ -56,7 +56,7 @@ function dashboard() {
                         <div className="mt-5 flex-shrink-0">
                             <img
                                 className="h-80 w-80 "
-                                src="https://png.pngtree.com/png-clipart/20191206/ourmid/pngtree-green-dollar-sign-money-tree-png-image_2070575.jpg"
+                                src="https://i.pinimg.com/736x/80/0b/78/800b78cf961d8624e3f25c98f65bf620.jpg"
                                 alt="Neil image"
                             />
                         </div>
