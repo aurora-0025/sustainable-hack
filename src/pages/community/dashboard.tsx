@@ -11,9 +11,10 @@ const data = {
     labels: ["Red", "Green", "Blue"],
     datasets: [
         {
-            data: [300, 50, 100],
-            backgroundColor: ["#4188ff", "#649eff", "#78aaff"],
-            hoverBackgroundColor: ["#FF6384", "#FF6384", "#FF6384"],
+            data: [100, 250, 100],
+            backgroundColor: ["#1F2937","#4188ff", "#649eff" ],
+            hoverBackgroundColor: ["#1E293B","#FF6384", "#FF6384"],
+            borderWidth: [0, 0, 0, 0]
         },
     ],
 };
@@ -23,17 +24,18 @@ const data2 = {
     datasets: [
         {
             data: [300, 50],
-            backgroundColor: ["#4188ff", "#649eff"],
-            hoverBackgroundColor: ["#FF6384", "#FF6384"],
+            backgroundColor: ["#4188ff", "#1F2937"],
+            hoverBackgroundColor: ["#FF6384", "#1E293B"],
+            borderWidth: [0, 0, 0, 0]
         },
     ],
 };
 
 function dashboard() {
     return (
-        <div className="p-5 md:p-10 flex justify-center">
-            <div className="max-w-[1260px] mt-6 flex flex-col ">
-            <div className="mt-6 flex  flex-col gap-10 p-5 md:flex-row justify-evenly">
+        <div className="p-5 md:p-10 flex justify-center bg-gray-900 ">
+            <div className="max-w-[1240px] mt-6 flex flex-col ">
+            <div className="flex  flex-col gap-10 p-5 md:flex-row justify-evenly">
                 <div className="flex flex-col divide-y-[0.5px] divide-gray-700 rounded-lg border bg-white p-4 shadow-md dark:border-gray-700 dark:bg-gray-800 sm:p-8">
                     <div className="mt-5 flex-col">
                         <div className="text-sm font-bold text-blue-700">
@@ -92,12 +94,7 @@ function dashboard() {
                         <h3 className="font text-xl  text-gray-900 dark:text-white">
                             Database
                         </h3>
-                        <h3 className="font text-xl text-gray-900 dark:text-white">
-                            Copies
-                        </h3>
-                        <h3 className="font text-xl  text-gray-900 dark:text-white">
-                            Blah
-                        </h3>
+                       
                     </div>
                 </div>
             </div>
