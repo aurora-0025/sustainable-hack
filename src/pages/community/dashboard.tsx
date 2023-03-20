@@ -14,7 +14,8 @@ const data = {
             data: [100, 250, 100],
             backgroundColor: ["#1F2937","#4188ff", "#649eff" ],
             hoverBackgroundColor: ["#1E293B","#FF6384", "#FF6384"],
-            borderWidth: [0, 0, 0, 0]
+            borderWidth: [0, 0, 0],
+            borderRadius:[10,0,0]
         },
     ],
 };
@@ -23,10 +24,11 @@ const data2 = {
     labels: ["Red", "Green", "Blue"],
     datasets: [
         {
-            data: [300, 50],
-            backgroundColor: ["#4188ff", "#1F2937"],
-            hoverBackgroundColor: ["#FF6384", "#1E293B"],
-            borderWidth: [0, 0, 0, 0]
+            data: [40, 300],
+            backgroundColor: ["#1F2937","#4188ff" ],
+            hoverBackgroundColor: ["#1E293B","#FF6384"],
+            borderWidth: [0, 0],
+            borderRadius:[10,10]
         },
     ],
 };
@@ -146,6 +148,28 @@ function dashboard() {
                             <li className="mt-1 py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="">
+                                        <img
+                                            className="h-8 w-8 rounded-full"
+                                            src="https://wallpapercave.com/wp/wp11696053.jpg"
+                                            alt="Neil image"
+                                        />
+                                    </div>
+                                    <div className="min-w-0 flex-1">
+                                        <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
+                                            Bocchi the Rohn
+                                        </p>
+                                        <p className="truncate text-sm text-gray-500 dark:text-gray-400">
+                                            deez@nuts.com
+                                        </p>
+                                    </div>
+                                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                        Active
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="mt-1 py-3 sm:py-4">
+                                <div className="flex items-center space-x-4">
+                                    <div className="flex-shrink-0">
                                         <img
                                             className="h-8 w-8 rounded-full"
                                             src="https://wallpapercave.com/wp/wp11696053.jpg"
